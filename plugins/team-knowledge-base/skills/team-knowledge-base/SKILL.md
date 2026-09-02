@@ -27,8 +27,7 @@ description: 使用小O协作团队知识库搜索、阅读、创建、上传、
 - `kb_create_directory`
 - `kb_create_document`
 - `kb_update_document`
-- `kb_upload_file`：受限小文件，必须校验字节数和 SHA-256
-- `kb_prepare_upload`、`kb_complete_upload`：大文件受控上传会话
+- `kb_upload_file`：当前支持不超过 512 KiB 的受限小文件，必须校验字节数和 SHA-256
 - `kb_rename_item`
 - `kb_move_item`
 - `kb_copy_item`
@@ -53,4 +52,4 @@ description: 使用小O协作团队知识库搜索、阅读、创建、上传、
 - 保留 Markdown、Frontmatter、`[[Wiki Link]]` 和附件相对路径。
 - 未经明确要求不得重排 Frontmatter、批量改写链接或改变附件目录结构。
 - `.obsidian/`、隐藏同步状态、Git 内部目录和系统临时文件默认不可写。
-- MCP 不能直接读取成员电脑上的 `local_path`。上传必须使用用户实际提供的内容或服务返回的受控上传会话；不得声称仅凭本地路径已经上传。
+- MCP 不能直接读取成员电脑上的 `local_path`。上传必须使用用户实际提供的内容；当前不支持超过 512 KiB 的大文件，不得声称仅凭本地路径已经上传。

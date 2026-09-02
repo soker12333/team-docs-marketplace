@@ -11,8 +11,6 @@
         "kb_create_document",
         "kb_update_document",
         "kb_upload_file",
-        "kb_prepare_upload",
-        "kb_complete_upload",
         "kb_rename_item",
         "kb_move_item",
         "kb_copy_item",
