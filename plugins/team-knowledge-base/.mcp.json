@@ -3,7 +3,6 @@
     "xiaooTeamDocs": {
       "type": "http",
       "url": "https://cheniplaw.com.cn/kb-mcp/mcp",
-      "oauth_resource": "https://cheniplaw.com.cn/kb-mcp/mcp",
       "enabled_tools": [
         "kb_list_directory",
         "kb_search_files",

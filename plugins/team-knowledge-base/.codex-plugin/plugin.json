@@ -1,16 +1,16 @@
 {
   "name": "team-knowledge-base",
-  "version": "0.1.0",
-  "description": "通过只读 OAuth MCP 安全搜索和读取小O协作团队文档库。",
+  "version": "0.1.0+codex.20260902103845",
+  "description": "\u901a\u8fc7\u53ea\u8bfb OAuth MCP \u5b89\u5168\u641c\u7d22\u548c\u8bfb\u53d6\u5c0fO\u534f\u4f5c\u56e2\u961f\u6587\u6863\u5e93\u3002",
   "author": {
-    "name": "小O协作"
+    "name": "\u5c0fO\u534f\u4f5c"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "团队文档库",
-    "shortDescription": "只读搜索、列目录和读取团队文档。",
-    "longDescription": "使用每位成员自己的小O协作身份，通过 kb.read OAuth 安全访问团队文档库。插件只提供搜索、列目录和读取能力，不允许上传、覆盖、删除、移动或修改权限。",
-    "developerName": "小O协作",
+    "displayName": "\u56e2\u961f\u6587\u6863\u5e93",
+    "shortDescription": "\u53ea\u8bfb\u641c\u7d22\u3001\u5217\u76ee\u5f55\u548c\u8bfb\u53d6\u56e2\u961f\u6587\u6863\u3002",
+    "longDescription": "\u4f7f\u7528\u6bcf\u4f4d\u6210\u5458\u81ea\u5df1\u7684\u5c0fO\u534f\u4f5c\u8eab\u4efd\uff0c\u901a\u8fc7 kb.read OAuth \u5b89\u5168\u8bbf\u95ee\u56e2\u961f\u6587\u6863\u5e93\u3002\u63d2\u4ef6\u53ea\u63d0\u4f9b\u641c\u7d22\u3001\u5217\u76ee\u5f55\u548c\u8bfb\u53d6\u80fd\u529b\uff0c\u4e0d\u5141\u8bb8\u4e0a\u4f20\u3001\u8986\u76d6\u3001\u5220\u9664\u3001\u79fb\u52a8\u6216\u4fee\u6539\u6743\u9650\u3002",
+    "developerName": "\u5c0fO\u534f\u4f5c",
     "category": "Productivity",
     "capabilities": [
       "Read"
@@ -18,9 +18,9 @@
     "websiteURL": "https://cheniplaw.com.cn/",
     "brandColor": "#2563EB",
     "defaultPrompt": [
-      "搜索团队文档库中与当前问题相关的资料，并注明来源。",
-      "列出我有权访问的团队文档库顶层目录。",
-      "读取指定团队文档并概括要点，不执行任何修改。"
+      "\u641c\u7d22\u56e2\u961f\u6587\u6863\u5e93\u4e2d\u4e0e\u5f53\u524d\u95ee\u9898\u76f8\u5173\u7684\u8d44\u6599\uff0c\u5e76\u6ce8\u660e\u6765\u6e90\u3002",
+      "\u5217\u51fa\u6211\u6709\u6743\u8bbf\u95ee\u7684\u56e2\u961f\u6587\u6863\u5e93\u9876\u5c42\u76ee\u5f55\u3002",
+      "\u8bfb\u53d6\u6307\u5b9a\u56e2\u961f\u6587\u6863\u5e76\u6982\u62ec\u8981\u70b9\uff0c\u4e0d\u6267\u884c\u4efb\u4f55\u4fee\u6539\u3002"
     ]
   },
   "mcpServers": "./.mcp.json"
