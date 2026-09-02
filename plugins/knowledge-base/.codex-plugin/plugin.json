@@ -1,0 +1,28 @@
+{
+  "name": "knowledge-base",
+  "version": "0.1.0",
+  "description": "通过独立 OAuth 安全搜索、阅读、创建、编辑、整理和恢复 Git/Obsidian 知识库。",
+  "author": {
+    "name": "小O协作"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "知识库",
+    "shortDescription": "搜索、沉淀和整理团队的 Git/Obsidian 知识。",
+    "longDescription": "连接团队 Git/Obsidian 知识层，支持搜索、阅读、创建知识页、追加建议、版本化编辑、附件、移动、复制、回收站、历史版本恢复和撤销。每次写入形成 Git 提交，并保护人的正文、系统目录和知识分类规则。本插件不读取 COS 团队文档库中的案件原件。",
+    "developerName": "小O协作",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://cheniplaw.com.cn/",
+    "brandColor": "#7C3AED",
+    "defaultPrompt": [
+      "在知识库搜索与当前问题有关的知识页，并列出来源。",
+      "把这段经过核实的结论整理成待审核知识页。",
+      "整理指定知识目录，先给出移动和重命名预览。"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
