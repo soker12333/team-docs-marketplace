@@ -1,16 +1,16 @@
 {
   "name": "knowledge-base",
-  "version": "0.1.0",
-  "description": "通过独立 OAuth 安全搜索、阅读、创建、编辑、整理和恢复 Git/Obsidian 知识库。",
+  "version": "0.1.0+codex.20260902233535",
+  "description": "\u901a\u8fc7\u72ec\u7acb OAuth \u5b89\u5168\u641c\u7d22\u3001\u9605\u8bfb\u3001\u521b\u5efa\u3001\u7f16\u8f91\u3001\u6574\u7406\u548c\u6062\u590d Git/Obsidian \u77e5\u8bc6\u5e93\u3002",
   "author": {
-    "name": "小O协作"
+    "name": "\u5c0fO\u534f\u4f5c"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "知识库",
-    "shortDescription": "搜索、沉淀和整理团队的 Git/Obsidian 知识。",
-    "longDescription": "连接团队 Git/Obsidian 知识层，支持搜索、阅读、创建知识页、追加建议、版本化编辑、附件、移动、复制、回收站、历史版本恢复和撤销。每次写入形成 Git 提交，并保护人的正文、系统目录和知识分类规则。本插件不读取 COS 团队文档库中的案件原件。",
-    "developerName": "小O协作",
+    "displayName": "\u77e5\u8bc6\u5e93",
+    "shortDescription": "\u641c\u7d22\u3001\u6c89\u6dc0\u548c\u6574\u7406\u56e2\u961f\u7684 Git/Obsidian \u77e5\u8bc6\u3002",
+    "longDescription": "\u8fde\u63a5\u56e2\u961f Git/Obsidian \u77e5\u8bc6\u5c42\uff0c\u652f\u6301\u641c\u7d22\u3001\u9605\u8bfb\u3001\u521b\u5efa\u77e5\u8bc6\u9875\u3001\u8ffd\u52a0\u5efa\u8bae\u3001\u7248\u672c\u5316\u7f16\u8f91\u3001\u9644\u4ef6\u3001\u79fb\u52a8\u3001\u590d\u5236\u3001\u56de\u6536\u7ad9\u3001\u5386\u53f2\u7248\u672c\u6062\u590d\u548c\u64a4\u9500\u3002\u6bcf\u6b21\u5199\u5165\u5f62\u6210 Git \u63d0\u4ea4\uff0c\u5e76\u4fdd\u62a4\u4eba\u7684\u6b63\u6587\u3001\u7cfb\u7edf\u76ee\u5f55\u548c\u77e5\u8bc6\u5206\u7c7b\u89c4\u5219\u3002\u672c\u63d2\u4ef6\u4e0d\u8bfb\u53d6 COS \u56e2\u961f\u6587\u6863\u5e93\u4e2d\u7684\u6848\u4ef6\u539f\u4ef6\u3002",
+    "developerName": "\u5c0fO\u534f\u4f5c",
     "category": "Productivity",
     "capabilities": [
       "Read",
@@ -19,9 +19,9 @@
     "websiteURL": "https://cheniplaw.com.cn/",
     "brandColor": "#7C3AED",
     "defaultPrompt": [
-      "在知识库搜索与当前问题有关的知识页，并列出来源。",
-      "把这段经过核实的结论整理成待审核知识页。",
-      "整理指定知识目录，先给出移动和重命名预览。"
+      "\u5728\u77e5\u8bc6\u5e93\u641c\u7d22\u4e0e\u5f53\u524d\u95ee\u9898\u6709\u5173\u7684\u77e5\u8bc6\u9875\uff0c\u5e76\u5217\u51fa\u6765\u6e90\u3002",
+      "\u628a\u8fd9\u6bb5\u7ecf\u8fc7\u6838\u5b9e\u7684\u7ed3\u8bba\u6574\u7406\u6210\u5f85\u5ba1\u6838\u77e5\u8bc6\u9875\u3002",
+      "\u6574\u7406\u6307\u5b9a\u77e5\u8bc6\u76ee\u5f55\uff0c\u5148\u7ed9\u51fa\u79fb\u52a8\u548c\u91cd\u547d\u540d\u9884\u89c8\u3002"
     ]
   },
   "mcpServers": "./.mcp.json"

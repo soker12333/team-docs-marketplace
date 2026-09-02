@@ -23,7 +23,7 @@
         "path": "./plugins/knowledge-base"
       },
       "policy": {
-        "installation": "NOT_AVAILABLE",
+        "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
