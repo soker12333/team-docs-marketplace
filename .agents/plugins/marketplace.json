@@ -1,0 +1,20 @@
+{
+  "name": "xiaoo-public",
+  "interface": {
+    "displayName": "小O协作插件"
+  },
+  "plugins": [
+    {
+      "name": "team-knowledge-base",
+      "source": {
+        "source": "local",
+        "path": "./plugins/team-knowledge-base"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

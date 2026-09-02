@@ -1,0 +1,27 @@
+{
+  "name": "team-knowledge-base",
+  "version": "0.1.0",
+  "description": "通过只读 OAuth MCP 安全搜索和读取小O协作团队文档库。",
+  "author": {
+    "name": "小O协作"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "团队文档库",
+    "shortDescription": "只读搜索、列目录和读取团队文档。",
+    "longDescription": "使用每位成员自己的小O协作身份，通过 kb.read OAuth 安全访问团队文档库。插件只提供搜索、列目录和读取能力，不允许上传、覆盖、删除、移动或修改权限。",
+    "developerName": "小O协作",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://cheniplaw.com.cn/",
+    "brandColor": "#2563EB",
+    "defaultPrompt": [
+      "搜索团队文档库中与当前问题相关的资料，并注明来源。",
+      "列出我有权访问的团队文档库顶层目录。",
+      "读取指定团队文档并概括要点，不执行任何修改。"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
