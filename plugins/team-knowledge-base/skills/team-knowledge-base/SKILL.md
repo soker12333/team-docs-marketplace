@@ -1,6 +1,6 @@
 ---
 name: team-knowledge-base
-description: 使用小O协作团队文档库搜索、阅读、创建、上传、编辑、整理、版本恢复和回收站。用户提到“团队文档库”“案件材料”“团队文件”或明确要求使用 xiaooTeamDocs 时使用；明确提到“知识库”、Obsidian 或 Git 知识页时不使用。
+description: 使用小O协作团队文档库搜索、阅读、图片/PDF OCR、下载原文件、创建、上传、编辑、整理、版本恢复和回收站。用户提到“团队文档库”“案件材料”“团队文件”或明确要求使用 xiaooTeamDocs 时使用；明确提到“知识库”、Obsidian 或 Git 知识页时不使用。
 ---
 
 # 团队文档库
@@ -20,6 +20,7 @@ description: 使用小O协作团队文档库搜索、阅读、创建、上传、
 - `kb_list_directory`
 - `kb_search_files`
 - `kb_read_document`
+- `kb_download_file`：生成 5 分钟有效的原文件下载链接
 - `kb_list_versions`
 - `kb_list_trash`
 
@@ -47,6 +48,8 @@ description: 使用小O协作团队文档库搜索、阅读、创建、上传、
 4. 修改产生新版本；恢复旧版本也产生新的恢复版本，不抹除中间历史。
 5. 删除只使用 `kb_move_to_trash`，返回操作编号和恢复方式。
 6. 回答中报告成功、跳过、冲突和失败项，并保留服务返回的操作编号。
+7. PDF OCR 必须指定页码，一次最多 20 页；PNG、JPEG、WebP、TIFF、BMP 图片可整张 OCR，单图最多 20 MiB。OCR 内容只作辅助，引用前核对原件。
+8. 用户要求下载时使用 `kb_download_file` 返回短时链接；链接过期则重新生成，不转存为永久公开地址，也不把签名参数写入知识页或日志。
 
 ## 文档格式
 
