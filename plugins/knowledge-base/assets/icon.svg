@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">知识库</title>
+  <desc id="desc">紫色圆角方块中的打开书页和知识节点</desc>
+  <defs>
+    <linearGradient id="bg" x1="73" y1="58" x2="442" y2="452" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="page" x1="148" y1="173" x2="359" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDE9FE"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="28" width="456" height="456" rx="116" fill="url(#bg)"/>
+  <path d="M91 181c52-25 107-17 165 24v208c-53-39-108-48-165-27V181Z" fill="url(#page)"/>
+  <path d="M421 181c-52-25-107-17-165 24v208c53-39 108-48 165-27V181Z" fill="url(#page)"/>
+  <path d="M256 205v208" fill="none" stroke="#C4B5FD" stroke-width="10" stroke-linecap="round"/>
+  <path d="M135 234c34-5 61 2 86 18M135 282c34-5 61 2 86 18M291 252c25-16 52-23 86-18M291 300c25-16 52-23 86-18" fill="none" stroke="#7C3AED" stroke-width="12" stroke-linecap="round" opacity=".88"/>
+  <circle cx="148" cy="351" r="16" fill="#7C3AED"/>
+  <circle cx="203" cy="365" r="12" fill="#8B5CF6"/>
+  <path d="m161 354 30 8" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="364" cy="351" r="16" fill="#7C3AED"/>
+  <circle cx="309" cy="365" r="12" fill="#8B5CF6"/>
+  <path d="m351 354-30 8" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+</svg>
