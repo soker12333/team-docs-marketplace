@@ -20,7 +20,9 @@ description: 使用小O协作团队文档库搜索、阅读、图片/PDF OCR、�
 - `kb_list_directory`
 - `kb_search_files`
 - `kb_read_document`
-- `kb_download_file`：生成 5 分钟有效的原文件下载链接
+- `kb_download_file`：返回可直接点击、5 分钟有效的单文件下载资源
+- `kb_download_archive`：按多个文件或一个目录创建异步 ZIP 下载任务
+- `kb_get_download_archive`：查询 ZIP 任务进度并在完成后返回可点击下载资源
 - `kb_list_versions`
 - `kb_list_trash`
 
@@ -49,7 +51,9 @@ description: 使用小O协作团队文档库搜索、阅读、图片/PDF OCR、�
 5. 删除只使用 `kb_move_to_trash`，返回操作编号和恢复方式。
 6. 回答中报告成功、跳过、冲突和失败项，并保留服务返回的操作编号。
 7. PDF OCR 必须指定页码，一次最多 20 页；PNG、JPEG、WebP、TIFF、BMP 图片可整张 OCR，单图最多 100 MiB。OCR 内容只作辅助，引用前核对原件。
-8. 用户要求下载时使用 `kb_download_file` 返回短时链接；链接过期则重新生成，不转存为永久公开地址，也不把签名参数写入知识页或日志。
+8. 单文件下载使用 `kb_download_file`；多个文件或整个目录使用 `kb_download_archive`，随后用 `kb_get_download_archive` 查询到 `ready`。网络重试必须复用同一 `request_id`，避免重复打包。
+9. 手选文件一次最多 200 个；目录递归最多 2,000 个文件，未压缩总量最多 5 GiB。任何一个文件无下载权限、已不存在或版本发生变化时，整个 ZIP 任务失败，不得静默漏掉该文件。
+10. 单文件和 ZIP 下载链接均只在 5 分钟内有效；ZIP 任务保留 1 小时。链接过期则重新生成或重新查询，不转存为永久公开地址，也不把签名参数写入知识页或日志。
 
 ## 文档格式
 
