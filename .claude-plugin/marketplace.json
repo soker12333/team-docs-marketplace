@@ -1,0 +1,19 @@
+{
+  "name": "xiaoo-public",
+  "owner": { "name": "小O协作" },
+  "metadata": { "description": "团队文档库和 Git/Obsidian 知识库；各自使用成员本人的 OAuth 授权。" },
+  "plugins": [
+    {
+      "name": "team-knowledge-base",
+      "source": "./plugins/team-knowledge-base",
+      "description": "团队文档库：搜索、OCR、下载、上传、编辑和整理案件材料。",
+      "category": "productivity"
+    },
+    {
+      "name": "knowledge-base",
+      "source": "./plugins/knowledge-base",
+      "description": "知识库：搜索、沉淀、编辑和整理 Git/Obsidian 知识页。",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "knowledge-base",
+  "displayName": "知识库",
+  "version": "0.1.0",
+  "description": "通过成员本人的小O协作 OAuth，搜索、创建、编辑、整理和恢复 Git/Obsidian 知识页。",
+  "author": { "name": "小O协作" },
+  "homepage": "https://cheniplaw.com.cn/",
+  "repository": "https://github.com/soker12333/team-docs-marketplace",
+  "icon": "./assets/app-icon-1024.png",
+  "skills": "./skills/",
+  "mcpServers": {
+    "xiaooKnowledgeBase": {
+      "type": "http",
+      "url": "https://cheniplaw.com.cn/knowledge-mcp/mcp"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@xiaoo/team-libraries",
+  "version": "0.1.0",
+  "description": "小O协作团队文档库与知识库的 DeepSeek Harness 适配包",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "repository": { "type": "git", "url": "git+https://github.com/soker12333/team-docs-marketplace.git" },
+  "exports": {
+    "./team-docs": "./adapters/deepseek-harness/team-docs.mjs",
+    "./team-docs/locale/*": "./adapters/deepseek-harness/locales/team-docs/*",
+    "./team-docs/icon": "./plugins/team-knowledge-base/assets/app-icon-1024.png",
+    "./knowledge-base": "./adapters/deepseek-harness/knowledge-base.mjs",
+    "./knowledge-base/locale/*": "./adapters/deepseek-harness/locales/knowledge-base/*",
+    "./knowledge-base/icon": "./plugins/knowledge-base/assets/app-icon-1024.png",
+    "./locale/*": "./adapters/deepseek-harness/locales/bundle/*",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["adapters/deepseek-harness", "plugins", "cordis.patch.yml", "README.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "dependencies": { "mcp-remote": "0.14.3" },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-mcp-client": "0.2.1-alpha.1 || 0.2.1-alpha.2",
+    "@deepseek-ai/dsh-skill": "0.2.1-alpha.1 || 0.2.1-alpha.2"
+  },
+  "scripts": { "test": "node --test tests/*.test.mjs" }
+}

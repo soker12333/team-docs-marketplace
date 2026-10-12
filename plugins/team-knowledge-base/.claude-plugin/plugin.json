@@ -1,0 +1,17 @@
+{
+  "name": "team-knowledge-base",
+  "displayName": "团队文档库",
+  "version": "0.2.0",
+  "description": "通过成员本人的小O协作 OAuth，搜索、OCR、下载、上传、编辑和整理团队案件材料。",
+  "author": { "name": "小O协作" },
+  "homepage": "https://cheniplaw.com.cn/",
+  "repository": "https://github.com/soker12333/team-docs-marketplace",
+  "icon": "./assets/app-icon-1024.png",
+  "skills": "./skills/",
+  "mcpServers": {
+    "xiaooTeamDocs": {
+      "type": "http",
+      "url": "https://cheniplaw.com.cn/kb-mcp/mcp"
+    }
+  }
+}

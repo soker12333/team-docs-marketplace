@@ -1,0 +1,9 @@
+# Install once, then enable each library in your PERSONAL LOCAL DSH profile.
+# Disabled by default: never launch a browser or share an identity on a cloud Host.
+- insert:
+    - id: xiaoo-team-docs
+      name: '@xiaoo/team-libraries/team-docs'
+      disabled: true
+    - id: xiaoo-knowledge-base
+      name: '@xiaoo/team-libraries/knowledge-base'
+      disabled: true
